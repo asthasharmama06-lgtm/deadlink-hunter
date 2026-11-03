@@ -40,8 +40,7 @@ return () => {
 };
 
 
-}, [job]);
-
+}, [job?.id, job?.status]);
 const submit = () => {
 const problem = validateUrl(url);
 setErr(problem);
